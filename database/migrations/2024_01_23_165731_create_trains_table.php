@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string("azienda");
             $table->string("stazione di partenza");
             $table->string("stazione di arrivo");
-            
-
+            $table->time("orario di arrivo");
+            $table->time("orario di partenza");
         });
     }
 
