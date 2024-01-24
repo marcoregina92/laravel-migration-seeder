@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('trains', function (Blueprint $table) {
-            $table->id();
             $table->string("azienda");
             $table->string("stazione_di_partenza");
             $table->string("stazione_di_arrivo");
             $table->time("orario_di_arrivo");
             $table->time("orario_di_partenza");
+            $table->timestamps();
         });
     }
 

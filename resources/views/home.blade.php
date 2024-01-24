@@ -3,7 +3,6 @@
 @section('content')
     <h1 class="mb-5">Treni</h1>
     @foreach ($treni as $treno)
-        <h2>ID: {{ $treno->id }}</h2>
         <h2>Azienda: {{ $treno->azienda }}</h2>
         <h2>Stazione di partenza: {{ $treno->stazione_di_partenza }}</h2>
         <h2>Stazione di arrivo: {{ $treno->stazione_di_arrivo }}</h2>
